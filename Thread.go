@@ -73,6 +73,11 @@ func (t Thread) Kill() {
 	C.pthread_kill(t.c(), C.SIGSEGV)
 }
 
+// cancels the thread
+func (t Thread) Cancel() {
+	C.pthread_cancel(t.c())
+}
+
 // helper function to convert the Thread object into a C.pthread_t object
 func (t Thread) c() C.pthread_t {
 	return *(*C.pthread_t)(unsafe.Pointer(t))
