@@ -78,6 +78,11 @@ func (t Thread) Cancel() {
 	C.pthread_cancel(t.c())
 }
 
+// detachs the thread
+func (t Thread) Detach() {
+	C.pthread_detach(t.c())
+}
+
 // helper function to convert the Thread object into a C.pthread_t object
 func (t Thread) c() C.pthread_t {
 	return *(*C.pthread_t)(unsafe.Pointer(t))
