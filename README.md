@@ -6,6 +6,11 @@ replacement for goroutines.** This library is designed to help bind C libraries
 with blocking function calls to Go in a go-friendly manner. If this is not your
 use case, this library probably won't help you.
 
+This is a fork of [liamzdenek/go-pthreads](https://github.com/liamzdenek/go-pthreads).
+
+I will be making substantial changes to this repository over the next few months so interface isn't stable and no version will be released until a stable interface achieved.
+
+
 Use Case
 --------
 
