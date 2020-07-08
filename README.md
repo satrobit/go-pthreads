@@ -85,3 +85,6 @@ Cons:
 * Does not integrate with the go scheduler (as a consequence of the new thread)
 * Harder to debug (crashes in C code don't produce stack traces)
 
+Credits
+---------
+This repository is based on [liamzdenek/go-pthreads](https://github.com/liamzdenek/go-pthreads)
